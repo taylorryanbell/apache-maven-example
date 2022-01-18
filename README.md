@@ -5,6 +5,9 @@
 ### Goal
 The goal of this project is to demonstrate a very basic project outline for Apache Maven. From here, we will do the following:
 
+---
+### Steps
+
 1. Add Apache Beam Dependencies including apache beam runner.
 - beam-sdks-java-core
 - beam-runners-direct-java
@@ -17,3 +20,7 @@ The goal of this project is to demonstrate a very basic project outline for Apac
 - Use a TextIO PTransform to write that list out to an output file (apache-example/output/file.txt)
     - Will requie using .withSuffix() and .withNumShards() to specify the type of file, and amount of files.
 - Look at the output file to see if it worked.
+
+3. Run the program in Maven using the following commands:
+`mvn clean compile`
+`mvn compile exec:java -Dexec.mainClass=Main`
