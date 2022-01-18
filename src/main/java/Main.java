@@ -31,6 +31,6 @@ public class Main {
 
         // run the pipeline
         pipeline.run().waitUntilFinish();
-        System.out.print("Finished pipeline.");
+        System.out.println("Finished pipeline.");
     }
 }
