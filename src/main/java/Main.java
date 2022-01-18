@@ -27,9 +27,10 @@ public class Main {
                 .apply(TextIO.write()  // call the TextIO.write() PTransform
                         .to("output/file")  // define output file
                         .withSuffix(".txt")  // define filetype extension
-                        .withNumShards(1));  // define number of shards
+                        .withoutSharding());  // define number of shards
 
         // run the pipeline
         pipeline.run().waitUntilFinish();
+        System.out.print("Finished pipeline.");
     }
 }
