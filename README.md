@@ -6,6 +6,7 @@
 The goal of this project is to demonstrate a very basic project outline for Apache Maven. From here, we will do the following:
 
 ---
+
 ### Steps
 
 1. Add Apache Beam Dependencies including apache beam runner.
