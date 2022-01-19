@@ -7,6 +7,35 @@
     <groupId>org.example</groupId>
     <artifactId>apache-example</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <dependencies>
+
+        <!-- Apache Beam Java Core -->
+        <dependency>
+            <groupId>org.apache.beam</groupId>
+            <artifactId>beam-sdks-java-core</artifactId>
+            <version>2.35.0</version>
+        </dependency>
+
+        <!-- Apache Beam Direct Runner -->
+        <dependency>
+            <groupId>org.apache.beam</groupId>
+            <artifactId>beam-runners-direct-java</artifactId>
+            <version>2.35.0</version>
+        </dependency>
+
+        <!-- SLF4J Logging API -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.32</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.32</version>
+        </dependency>
+
+    </dependencies>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
